@@ -1,0 +1,734 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: century gothic;
+  scroll-behavior: smooth;
+}
+
+.menu-wrap {
+  display: none;
+}
+
+.book {
+  background-color: #24487E;
+  padding: 2px 9px 2px 9px;
+  border-radius: 20px 20px 20px 20px;
+  border-style: none;
+  color: white;
+}
+
+.banner {
+  height: 80vh;
+  background-image: url(../Images/burj-al-arab-690768__480.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner header {
+  padding-top: 10px;
+}
+
+.banner header .nav p {
+  padding-right: 40%;
+  padding-left: 25px;
+  font-weight: bolder;
+  font-size: 30px;
+  color: white;
+}
+
+.banner header .nav li {
+  padding: 12px;
+}
+
+.banner header .nav li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.banner header .nav li a:hover {
+  color: #FFE29E;
+  font-weight: bolder;
+}
+
+.banner header .nav li .book {
+  background-color: #FFE29E;
+  padding: 0 8px 0 8px;
+  border-radius: 20px 20px 20px 20px;
+  border-style: none;
+  color: black;
+}
+
+.banner h1 {
+  text-transform: uppercase;
+  color: white;
+  text-align: right;
+  font-family: Century Gothic Std;
+  font-size: 70px;
+  padding-right: 100px;
+  padding-top: 10px;
+}
+
+.banner .tk {
+  visibility: hidden;
+}
+
+.form {
+  background-color: #24487E;
+  position: absolute;
+  top: 70%;
+  left: 70px;
+  right: 70px;
+  padding: 30px;
+  text-align: center;
+}
+
+.form select {
+  margin-bottom: 20px;
+  width: 72%;
+}
+
+.form select {
+  color: grey;
+  padding: 7px 0 7px 0;
+}
+
+.form input {
+  padding: 5px;
+}
+
+.form .book-btn {
+  border: 1px solid white;
+  padding: 0 30px 0 30px;
+  margin-left: 31rem;
+  background-color: #24487E;
+  border-radius: 20px 20px 20px 20px;
+  -webkit-box-shadow: 0 1px 0 0  white;
+          box-shadow: 0 1px 0 0  white;
+  color: white;
+}
+
+.about {
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.about h2 {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.about .line {
+  width: 20%;
+  background-color: black;
+  border-width: 2px;
+  position: absolute;
+  top: 40px;
+  margin-left: 15vw;
+  margin-top: 8rem;
+}
+
+.about h3 {
+  text-transform: capitalize;
+}
+
+.about .about-inner {
+  text-align: left;
+  padding: 60px;
+  background-color: white;
+  -webkit-box-shadow: 0 3px 6px #313030;
+          box-shadow: 0 3px 6px #313030;
+}
+
+.about .about-img {
+  max-width: 70%;
+  text-align: center;
+  margin: 80px;
+}
+
+.about .about-img img {
+  border-radius: 5%;
+  -webkit-box-shadow: 0 3px 6px   black;
+          box-shadow: 0 3px 6px   black;
+}
+
+.places-to-visit {
+  background-color: #E0EEF9;
+  padding: 40px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.places-to-visit .visit {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 20px;
+  background-color: white;
+  opacity: .8;
+  margin-top: 40px;
+}
+
+.places-to-visit .visit .rating {
+  color: goldenrod;
+}
+
+.places-to-visit h2 {
+  padding-bottom: 20px;
+}
+
+.places-to-visit h4 {
+  text-transform: uppercase;
+}
+
+.places-to-visit .places {
+  position: relative;
+}
+
+.places-to-visit .places .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  overflow-y: hidden;
+  font-size: 12px;
+}
+
+.places-to-visit .places .overlay:hover {
+  opacity: 1;
+  width: 110%;
+}
+
+.places-to-visit .places:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.treanding-places {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.treanding-places h2 {
+  padding-bottom: 20px;
+}
+
+.treanding-places .line {
+  width: 20%;
+  background-color: black;
+  border-width: 2px;
+  position: absolute;
+  top: 40px;
+  margin-left: 24vw;
+}
+
+.treanding-places .places {
+  padding-bottom: 50px;
+}
+
+.treanding-places .places .box-content {
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 8px 10px;
+  top: 0%;
+  bottom: 5%;
+  opacity: 0;
+  z-index: 2;
+}
+
+.treanding-places .places:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.treanding-places .places:hover .box-content {
+  -webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  text-transform: capitalize;
+  margin: 15px 15px 50px 0px;
+}
+
+.treanding-places .places:hover .box-content h3 {
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  text-transform: uppercase;
+}
+
+.treanding-places #more {
+  display: none;
+}
+
+.treanding-places button {
+  background-color: #24487E;
+  color: white;
+  padding: 2px 9px 2px 9px;
+  border-radius: 20px 20px 20px 20px;
+  border-style: none;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.treanding-places .linebtn {
+  width: 80%;
+  background-color: black;
+  border-width: 1.5px;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.firsttime {
+  position: relative;
+  height: 50vh;
+  background-image: url(../Images/fisttym.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.firsttime .overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  background-color: black;
+  opacity: .6;
+}
+
+.firsttime .first {
+  z-index: 10;
+}
+
+.firsttime h2 {
+  padding-bottom: 20px;
+}
+
+.firsttime .book {
+  background-color: white;
+  padding: 2px 9px 2px 9px;
+  border-radius: 20px 20px 20px 20px;
+  border-style: none;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.special-offers {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.special-offers h2 {
+  padding-bottom: 20px;
+}
+
+.special-offers .line {
+  width: 20%;
+  background-color: black;
+  border-width: 2px;
+  margin: 15px auto;
+}
+
+.special-offers .trip {
+  position: relative;
+  text-align: center;
+  height: 33rem;
+  width: 65%;
+  margin-left: 10rem;
+}
+
+.special-offers .trip .overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  background-color: black;
+  opacity: .3;
+}
+
+.special-offers .trip h4 {
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+}
+
+.special-offers .trip img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.special-offers .container {
+  text-align: center;
+}
+
+.special-offers .container .offers {
+  margin: 10px;
+  text-align: center;
+  max-width: 59%;
+}
+
+.special-offers .container .offers .info {
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 3px 6px black;
+          box-shadow: 0 3px 6px black;
+}
+
+.special-offers .book {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2px 9px 2px 9px;
+  border-radius: 20px 20px 20px 20px;
+  border-style: none;
+  color: black;
+}
+
+.dream-team {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.dream-team h2 {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.dream-team .line {
+  width: 20%;
+  background-color: black;
+  border-width: 2px;
+  position: absolute;
+  top: 40px;
+  margin-left: 28vw;
+}
+
+.dream-team .team-dream {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dream-team .team-dream .team {
+  padding: 30px;
+  text-align: center;
+}
+
+.dream-team .team-dream .team h4 {
+  text-transform: capitalize;
+}
+
+footer {
+  background-color: #24487E;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+footer h2 {
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+footer #row {
+  text-align: start;
+}
+
+footer #row h4 {
+  text-transform: uppercase;
+}
+
+footer #row span {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  * p {
+    font-size: 12px;
+  }
+  .banner header .nav li {
+    padding: 5px;
+  }
+  .banner header .nav p {
+    padding-right: 12%;
+  }
+  .banner h1 {
+    font-size: 70px;
+    padding-right: 50px;
+    padding-top: 70px;
+  }
+  .form {
+    padding: 10px;
+  }
+  .form select {
+    margin-bottom: 20px;
+    width: 79%;
+  }
+  .form select {
+    color: grey;
+    padding: 7px 0 7px 0;
+  }
+  .form input {
+    padding: 5px;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .form .book-btn {
+    padding: 0 30px 0 30px;
+    margin-left: 14rem;
+  }
+}
+
+.about {
+  padding-top: 120px;
+}
+
+.about .line {
+  width: 20%;
+  background-color: black;
+  border-width: 2px;
+  position: absolute;
+  top: 40px;
+  margin-left: 7vw;
+  margin-top: 6rem;
+}
+
+.about .about-inner {
+  padding: 30px;
+}
+
+.about .about-img {
+  max-width: 90%;
+  text-align: center;
+  margin: 0px;
+  margin-top: 60px;
+}
+
+.about .about-img img {
+  border-radius: 5%;
+  -webkit-box-shadow: 0 3px 6px   black;
+          box-shadow: 0 3px 6px   black;
+}
+
+.places-to-visit {
+  padding: 40px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.places-to-visit .visit {
+  padding: 10px;
+  background-color: white;
+  margin-top: 0px;
+}
+
+.places-to-visit .visit .rating {
+  color: goldenrod;
+}
+
+.treanding-places .line {
+  width: 20%;
+  background-color: black;
+  border-width: 2px;
+  position: absolute;
+  top: 40px;
+  margin-left: 40vw;
+}
+
+.dream-team .line {
+  width: 20%;
+  background-color: black;
+  border-width: 2px;
+  position: absolute;
+  top: 40px;
+  margin-left: 50vw;
+}
+
+.firsttime {
+  height: 35vh;
+}
+
+.special-offers .trip {
+  height: 25rem;
+  width: 80%;
+  margin-left: 5rem;
+}
+
+.special-offers .container .offers {
+  max-width: 70%;
+}
+
+@media screen and (max-width: 667px) {
+  * p {
+    font-size: 12px;
+  }
+  * h2 {
+    font-size: 20px;
+  }
+  * h3 {
+    font-size: 18px;
+  }
+  .menu-wrap {
+    display: list-item;
+  }
+  .banner {
+    background-position: center;
+    text-align: center;
+    position: relative;
+  }
+  .banner header {
+    display: none;
+  }
+  .banner h1 {
+    font-size: 30px;
+    padding-right: 20px;
+    padding-top: 60%;
+    color: white;
+  }
+  .banner .tk {
+    visibility: visible;
+    position: absolute;
+    bottom: 90%;
+    left: 10px;
+    font-weight: bolder;
+  }
+  .form {
+    padding: 10px;
+    text-align: center;
+    height: 70vh;
+  }
+  .form select {
+    margin-bottom: 10px;
+    width: 86%;
+  }
+  .form select {
+    color: grey;
+    padding: 7px 0 7px 0;
+  }
+  .form input {
+    padding: 5px;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .form .book-btn {
+    padding: 0 30px 0 30px;
+    margin-left: 9px;
+  }
+  .about {
+    margin-top: 20rem;
+    text-align: center;
+  }
+  .about .about-img {
+    max-width: 100%;
+    margin: 0;
+  }
+  .about .about-img img {
+    border-radius: 5%;
+  }
+  .about .line {
+    width: 18%;
+    border-width: 1px;
+    position: absolute;
+    top: 40px;
+    margin-left: 5vw;
+    margin-top: 5.8rem;
+  }
+  .treanding-places .line {
+    width: 20%;
+    background-color: black;
+    border-width: 1px;
+    position: absolute;
+    top: 35px;
+    margin-left: 55vw;
+  }
+  .firsttime {
+    position: relative;
+    height: 45vh;
+    padding: 30px;
+  }
+  .special-offers .trip {
+    margin-left: 50px;
+  }
+  .special-offers .container {
+    text-align: center;
+  }
+  .special-offers .container #offers-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .special-offers .container #offers-main .offers {
+    margin: 10px;
+    text-align: center;
+    max-width: 50%;
+  }
+  .special-offers .book {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .dream-team h4 {
+    font-size: 15px;
+  }
+  .dream-team .team-dream {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .dream-team .team-dream .team {
+    padding: 30px;
+    max-width: 50%;
+  }
+  .dream-team .line {
+    width: 20%;
+    border-width: 1px;
+    top: 35px;
+    margin-left: 65vw;
+  }
+  footer #row {
+    text-align: center;
+  }
+  footer #row h4 {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

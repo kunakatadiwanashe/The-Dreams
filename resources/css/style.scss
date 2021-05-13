@@ -1,0 +1,279 @@
+*{margin: 0;padding: 0;font-family: century gothic;scroll-behavior: smooth;}
+
+@mixin section {padding-top: 40px;padding-bottom: 50px;
+   
+}
+@mixin h2 {padding-bottom: 20px;
+   
+}
+
+
+.menu-wrap{display: none ;}
+.book{background-color: #24487E;padding: 2px 9px 2px 9px;border-radius: 20px 20px 20px 20px;border-style: none;color: white;}
+
+.banner{height: 80vh;background-image: url(../Images/burj-al-arab-690768__480.png);background-size: cover;background-position: center;position: relative;;
+   header{padding-top: 10px;;
+   .nav{
+      p{padding-right: 40%;padding-left: 25px;font-weight: bolder;font-size: 30px;color: white;}
+      li{padding: 12px;
+         a{text-transform: uppercase;text-decoration: none;color: white;}
+         a:hover{color: #FFE29E;font-weight: bolder;}
+         .book{background-color: #FFE29E;padding: 0 8px 0 8px;border-radius: 20px 20px 20px 20px;border-style: none;color: rgb(0, 0, 0);}
+      }
+   }
+   }
+   h1{text-transform: uppercase;color: white;;text-align: right;font-family: Century Gothic Std;font-size: 70px;padding-right: 100px;padding-top: 10px;}
+   .tk{visibility: hidden;}
+}
+
+.form{background-color: #24487E;position: absolute;top: 70%;left: 70px;right: 70px;padding: 30px;text-align: center;;
+ select{margin-bottom: 20px;width: 72%;}
+ select{color: grey;padding: 7px 0 7px 0;}
+ input{padding: 5px;}
+   .book-btn{border: 1px solid white;padding: 0 30px 0 30px;margin-left: 31rem;;background-color: #24487E; border-radius: 20px 20px 20px 20px;box-shadow: 0 1px 0 0  white;color: white;;}
+   // input, select{box-shadow: 0 2px 0 0  rgb(0, 0, 0);border: none;}
+
+}
+.about{text-align: center;padding-top: 150px;padding-bottom: 80px;;position: relative;;
+   h2{@include h2();text-transform:uppercase;}
+   .line{width: 20%;background-color: rgb(0, 0, 0);border-width: 2px;position: absolute;top: 40px;margin-left: 15vw;margin-top: 8rem;}
+   h3{text-transform: capitalize;}
+   .about-inner{text-align: left;padding: 60px;background-color: white;;box-shadow: 0 3px 6px #313030}
+   .about-img{max-width: 70%;text-align: center;margin: 80px;;
+      img{border-radius: 5%;box-shadow: 0 3px 6px   black;}
+   }
+}
+.places-to-visit{background-color: #E0EEF9;padding: 40px;text-align: center;@include section();
+   .visit{text-align: center;text-transform: capitalize;padding: 20px;background-color: white;opacity: .8;;margin-top: 40px;
+      .rating{color: goldenrod;}
+   }
+   h2{@include h2()}
+   h4{text-transform: uppercase;}
+  .places{position: relative;
+   .overlay{
+       width: 100%;height: 100%;position: absolute;left: 50%;top: 50% ; transform: translate(-50%,-50%); color: white; text-align: center; opacity: 0; overflow-y: hidden;font-size: 12px; 
+  }
+  
+  .overlay:hover{  opacity: 1;width: 110%;}
+
+  }
+  .places:hover img{transform: scale(1.2);filter: blur(1px);}
+}
+
+
+
+
+.treanding-places{@include section();position: relative;
+   h2{@include h2()}
+   .line{width: 20%;background-color: rgb(0, 0, 0);border-width: 2px;position: absolute;top: 40px;margin-left: 24vw;}
+   .places{padding-bottom: 50px;
+      .box-content{position: absolute;transition: all 0.3s;padding: 8px 10px;top: 0%; bottom: 5%;opacity: 0;z-index: 2;
+      }
+     
+
+   }
+   .places:hover img{transform: scale(1.2);filter: blur(1px);}
+   .places:hover .box-content {box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.3);opacity: 1;transition: all 0.3s;color: white;text-transform: capitalize;margin:15px 15px 50px 0px;;
+      h3{ font-size: 30px;font-weight: bolder;color: white;text-transform: uppercase;}
+   }
+   #more{display: none;}
+   button{background-color: #24487E;color: white;padding: 2px 9px 2px 9px;border-radius: 20px 20px 20px 20px;border-style: none;margin-left: 50%;transform: translate(-50%,-50%);;}
+   .linebtn{width: 80%;background-color: rgb(0, 0, 0);border-width: 1.5px;margin-left: 50%;transform: translate(-50%,-50%);;}
+}
+
+
+.firsttime{position: relative;;height: 50vh;background-image: url(../Images/fisttym.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;;color: white;text-transform: capitalize;text-align: center;@include section();;
+   .overlay{width: 100%;height: 100%;top: 0;position: absolute;background-color: black;opacity: .6;}
+   .first{z-index: 10;}
+   h2{@include h2();}
+   .book{background-color: white;padding: 2px 9px 2px 9px;border-radius: 20px 20px 20px 20px;border-style: none;color: black;margin-bottom: 15px;}
+     
+}
+
+.special-offers{text-align: center;@include section();
+     h2{@include h2()}
+   .line{width: 20%;background-color: rgb(0, 0, 0);border-width: 2px;margin: 15px auto;}
+
+   .trip{position: relative;text-align: center;height: 33rem;width: 65%;margin-left: 10rem;;
+      .overlay{width: 100%;height: 100%;top: 0;position: absolute;background-color: black;opacity: .3;}
+      h4{position: absolute;top: 5rem;left: 50%;transform: translate(-50%,-50%);;color: white;}
+      img{object-fit: cover;height: 100%;width: 100%;}
+     
+      
+   }
+  .container{text-align: center;
+   .offers{margin: 10px;text-align: center;max-width: 59%;;
+      .info{text-transform: uppercase;box-shadow: 0 3px 6px rgb(0, 0, 0)}
+
+   }
+  }
+  .book{position: absolute;left: 50%;top: 90% ; transform: translate(-50%,-50%);background-color: white;padding: 2px 9px 2px 9px;border-radius: 20px 20px 20px 20px;border-style: none;color: black;}
+}
+
+
+
+.dream-team{@include section();position: relative;
+   h2{text-transform: uppercase;@include h2()}
+   .line{width: 20%;background-color: rgb(0, 0, 0);border-width: 2px;position: absolute;top: 40px;margin-left: 28vw;}
+   .team-dream{display: flex;
+         .team{padding: 30px;text-align: center;
+            h4{text-transform: capitalize;}
+
+         }
+   }
+}
+
+footer{background-color: #24487E;color: white;text-align: center;padding: 40px;;
+  h2{text-transform: uppercase;padding-bottom: 30px;}
+  #row{text-align: start;
+  h4{text-transform: uppercase;}
+  span{font-size: 10px;}
+}
+
+}
+
+@media screen and (max-width:1024px){
+   *{
+      p{font-size:12px;}
+      
+   }
+  
+
+   .banner{
+      header{
+      .nav{
+         li{padding: 5px;}
+         p{padding-right: 12%;} 
+      }
+      }
+      h1{font-size: 70px;padding-right: 50px;padding-top: 70px;}
+   }
+  
+   .form{padding: 10px;
+      select{margin-bottom: 20px;width: 79%;}
+ select{color: grey;padding: 7px 0 7px 0;}
+ input{padding: 5px;width: 90%;margin-bottom: 20px;}
+   .book-btn{padding: 0 30px 0 30px;margin-left: 14rem;}
+   
+
+}
+     
+   }
+   .about{padding-top: 120px;
+      .line{width: 20%;background-color: rgb(0, 0, 0);border-width: 2px;position: absolute;top: 40px;margin-left: 7vw;margin-top: 6rem;}
+      .about-inner{padding: 30px;}
+      .about-img{max-width: 90%;text-align: center;margin: 0px;margin-top: 60px;;
+         img{border-radius: 5%;box-shadow: 0 3px 6px   black;}
+      }
+   }
+
+   .places-to-visit{padding: 40px;text-align: center;@include section();
+      .visit{padding: 10px;background-color: white;margin-top: 0px;
+         .rating{color: goldenrod;}
+      }
+     
+}
+.treanding-places{
+   .line{width: 20%;background-color: rgb(0, 0, 0);border-width: 2px;position: absolute;top: 40px;margin-left: 40vw;}
+   
+}
+.dream-team{
+   .line{width: 20%;background-color: rgb(0, 0, 0);border-width: 2px;position: absolute;top: 40px;margin-left: 50vw;}
+}
+.firsttime{height: 35vh;}
+
+.special-offers{
+ .trip{height: 25rem;width: 80%;margin-left: 5rem;;    
+ }
+.container{
+ .offers{max-width: 70%;
+ }
+}
+
+}
+
+
+
+
+
+
+@media screen and (max-width:667px){
+   *{
+      p{font-size: 12px;}
+      h2{font-size: 20px;}
+      h3{font-size: 18px;}
+   }
+   .menu-wrap{display: list-item ;
+  
+   }
+  
+
+   .banner{background-position: center;text-align: center;position: relative;;
+      header{display: none;}
+      h1{font-size: 30px;padding-right: 20px;padding-top: 60%;color: white;}
+      .tk{visibility: visible;position: absolute;bottom: 90%;left: 10px;font-weight: bolder;;}
+   }
+   
+   
+   .form{padding: 10px;text-align: center;height: 70vh;;
+      select{margin-bottom: 10px;width: 86%;}
+      select{color: grey;padding: 7px 0 7px 0;}
+      input{padding: 5px;width: 90%;margin-bottom: 10px;}
+        .book-btn{padding: 0 30px 0 30px;margin-left: 9px;}
+        
+     
+     }
+
+   .about{margin-top: 20rem;text-align: center;;
+      .about-img{max-width: 100%;margin: 0;;
+         img{border-radius: 5%;}
+      }
+      .line{width: 18%;border-width: 1px;position: absolute;top: 40px;margin-left: 5vw;margin-top: 5.8rem;}
+   }
+   
+   .treanding-places{
+      .line{width: 20%;background-color: rgb(0, 0, 0);border-width: 1px;position: absolute;top: 35px;margin-left: 55vw;}
+      
+   }
+   .firsttime{position: relative;;height: 45vh;padding: 30px;;
+     
+     
+   }
+
+   .special-offers{
+      .trip{margin-left: 50px;}
+   .container{text-align: center;
+      #offers-main{display: flex;
+         .offers{margin: 10px;text-align: center;max-width: 50%;;
+       
+ 
+         }
+      }
+    
+   }
+   .book{position: absolute;left: 50%;top: 90% ; transform: translate(-50%,-50%);}
+ }
+
+
+   .dream-team{
+     
+      h4{font-size: 15px;}
+      .team-dream{display: flex;flex-wrap: wrap;
+            .team{padding: 30px;max-width: 50%;;
+   
+            }
+      }
+      .line{width: 20%;;border-width: 1px;top: 35px;margin-left: 65vw;}
+   }
+   
+footer{
+ 
+   #row{text-align:center;
+   h4{font-size: 15px;}
+ }
+ 
+ }
+}
+
+
+
